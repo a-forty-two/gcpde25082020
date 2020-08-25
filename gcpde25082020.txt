@@ -1,0 +1,131 @@
+Hello World!
+
+We'll get started as soon as audience arrives
+(latest by 9:15)
+
+data -> streams of 0s and 1s 
+	-> binary flow (Large objects)
+	-> these binary flows are BROKEN into chunks
+	-> chunks are distributively stored
+	-> diff from SMB-> file system 
+
+CloudSQL-> 416 GB of RAM per instance
+	-> One WRITE node, but multiple read nodes possible 
+
+multiple write nodes wanted? Use Cloud Spanner 
+
+OLTP                v/s        OLAP
+- source of data              - target store for data
+- small queries, typically      - JOINS and NORMALIZATIONS are
+with joins and normalizations     avoided- flat is best!
+- for editing data              - inserting and searching the data
+- poor performance on search    - poor performance on editing
+- product or tool specific      - business or domain specific
+- sep tables for users, products     - this is finance data,
+etc <- this is the concern		this is HR data etc
+
+
+DENORMALIZATION-> process of normalizing and then flattening
+otherwise it was just dirty data!
+
+Table1
+Name ProductID Quantity   
+Table2
+ProductId ProductName ProductDescription 
+
+OLTP-> you would want to optimize storage and jump/joins are OK
+
+DWTable1 (Denormalization)
+Name ProductID ProductName ProdDesc. Quantity
+Flattening-> converting normalized tables into a denormalized
+table 
+
+On prem v/s Cloud
+ETL, but on cloud we prefer ELT
+
+Extract-Load-and then transform all you want!!
+
+
+y = mx + c
+
+m = weights
+c = bias 
+machine learning = y = f(x) = w1*x1 + w2*x2... wn*xn + bias 
+if we use GRAPH theory-> Machine learning (traditional)
+			(statistical)
+if we use Probability-> Probabilistic ML
+if you break inputs(x) into smaller units, and then find patterns
+using Neural networks-> Deep Learning 
+
+using this y is called AI
+
+Important links:
+
+
+break-> 3:55 
+
+out of course:
+https://www.stitchdata.com/resources/oltp-vs-olap/#:~:text=OLTP%20and%20OLAP%3A%20The%20two,historical%20data%20from%20OLTP%20systems.
+https://www.youtube.com/watch?v=l5I0knEcH4I&feature=youtu.be
+
+Cloud can be accessed in following ways:
+1) Portal
+2) CLI: terminal or cmd 
+3) CLoud Native Shell 
+4) API (http calls using REST API for all unsupported lang)
+5) SDK (native support to programming languages like Python,Java
+
+
+
+Google Certified Professional Data Engineer
+	-> this is just 1 unit-> big data & data engineering
+August->beta=> MLOps, ML for Finance, big data, ml, tensorflow..
+
+Computer Science can only be customized by cloud providers 
+
+GCP Data Engineering Workshop
+	-> you are not expected to be an EXPERT in SQL
+	-> you are expected to be an EXPERT on BIG QUERY
+
+THIS IS NOT ABOUT PROGRAMMING LANGUAGES!!!
+This is about Infrastructure, cost, network, security, risk
+
+BQ is Semi-Structured (Arrays and objects and key-value pairs)
+
+	- 1 db, 1 table
+	- 1 db, multiple tables
+	- multiple dbs
+
+If you do REPLICATION in BIG Data:
+1) you end up with LINEARLY increasing cost
+2) you end up wasting resources-> FRAGMENTATION
+
+
+IAM-> helps define ROLES (predefined or custom)
+	-> Permissions based on Principal of Least Privil.
+	-> Need to know basis 
+	-> ROLE BASED ACCESS CONTROL 
+	-> CRITICAL for AUDITING of systems
+
+other way (no RBAC): Access Control List 
+	-> Routing tables or Firewall or whitelisted IPs
+
+ROUTING-> FORWARD or DROP
+
+DEK-> Data Encryption Key
+KEK-> Key Encryption Key 
+
+KEKs-> automatically rotated in a schedule in KMS 
+(key managementsystem)
+
+
+100 GB RAm, 10GHz 
+
+10 users-> 
+
+20 GB ram, 2 GHZ CPU-> Data analyst-> 20 MB
+1 MB ram, 1MHz CPU
+1 GB RAM, 0.5 GHz
+
+1 MB ram, 1 MHz
+
