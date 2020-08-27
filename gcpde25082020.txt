@@ -129,3 +129,32 @@ KEKs-> automatically rotated in a schedule in KMS
 
 1 MB ram, 1 MHz
 
+
+
+BigQuery is powered by massively parallel DREMEL engine
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36632.pdf
+
+
+Spark: In Memory 
+1) Inside RAM: SparkContext 
+2) outside: 
+	- batch: SQLContext
+	- stream: StreamContext 
+
+*.ipynb -> dev/test 
+
+JOB-> PyTHON file not a Python NOTEBOOK
+%%writefile ops to write JOB related operations as a PYTHON
+file so that it can run 
+
+
+DataSet: it is NOT REAL DATA, it is a POINTER to data
+DataFrame: broken dataset into smaller frames
+
+https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/data-engineering/demos
+
+
+Metadata queries on BigQuery process 0 bytes
+hence majorly cutting cost
+Analytics->numbers, performance-> try querying metadata
+instead of main data
