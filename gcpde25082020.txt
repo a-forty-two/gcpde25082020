@@ -158,3 +158,31 @@ Metadata queries on BigQuery process 0 bytes
 hence majorly cutting cost
 Analytics->numbers, performance-> try querying metadata
 instead of main data
+
+Pull in PubSub:
+1) MANUAL ack is MUST
+2) if ack not received, Pub/Sub will keep resending
+3) ONLY here: 7 days Retention period
+
+size limit on binary message publish-> 10 MB
+
+
+Please fill the feedback (link in chat)
+Please ping once feedback is complete 
+	(mandatory for all)
+Request: pelase verify completion by 11:30 latest
+
+
+Game:
+	-> TRUST
+	-> ncase.me/trust 
+
+BigTable: even with available infra, will take
+20 mins to REDISTRIBUTE the load between cluster
+
+
+Analytic Window Functions-> 
+set of rows as f(window frame time)
+
+
+longest query running time for BQ=6 hours
