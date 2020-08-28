@@ -186,3 +186,88 @@ set of rows as f(window frame time)
 
 
 longest query running time for BQ=6 hours
+
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html
+
+Containers:
+	- virtual ISOLATED environment with your configs
+	- your apps, your variables, your app state
+	- old/legacy tech support
+	- individual containers- Docker
+	- cluster- Kubernetes
+
+Kuberenetes-> open, same on-prem 
+
+Docker-> only horizontally scale, only your NO. of users that change
+	-> small teams, small contained area 
+	-> switched on and off
+
+Kuberenets-> ALWAYS on, production use cases 
+	-> Min of 3 nodes (1:0 (scaled down), 1:n (dev/test/prod), 3:N 
+		(high availability production) 
+
+
+
+Tensor-> [0] -> scalar 0th deg tensor, [0,1,2,3]->vector 1st deg,
+	nth degree tensor 
+	-> Nth dimension math & physics, atomic modeling 
+	-> matrices is the closest comparison 
+Pytorch, TensorFlow-> directed acyclic graph 
+
+
+
+
+
+2 most popular algorithms to find hyperparameter set:
+- GRID SEARCH-> exhaustive search, takes more time, give best hyper
+	param set 
+- RANDOM SEARCH -> workable parameters 
+
+
+How do I find best algo?
+	-> for loops (set1=efficiency1,set2=efficiency2..)
+
+SOlution: build a cluster
+	-> let this cluster try out HPs in parallel
+	-> after a fixed time or based on tolerable metrics,
+		just select the best amongst available
+	-> KUBERNETS 
+
+https://github.com/a-forty-two/cylons/blob/master/02_BreastCancerAnalysis.ipynb
+
+
+FPGA-> Field Programmable Gate Arrays
+
+
+Algo cheat sheet: (FYI only, out of course)
+https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+
+BigQuery-> Extract (Feature extraction), Transform (transform)
+
+2X1 =2
+2X2=4                 2X1=2, 2X2=4,2X3=6
+
+
+2X10=20...
+During Learning LABELS are important 
+Testing:
+2X9=?
+	=> 42 -> wrong answer! 18. 
+
+Bar Chart-> Buckets-> count/frequency 
+Histogram-> Bins -> frequency distribution
+
+
+Apache Airflow-> orchestration  
+	-> Event Driven
+	-> period driven
+
+Cloud Composer (MANAGED Apache Airflow) 
+
+
+
+
+
+
+
